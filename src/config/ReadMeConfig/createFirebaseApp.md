@@ -19,3 +19,6 @@ Before starting anything we would need to initialize your Firebase first here ar
 	 16. For **Google** we will be calling the Google API login to authenticate ourselves with a real gmail account
 	 17. ![Sign In Providers](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/SignInProviders.PNG)
 	 18. **Once that is set, we're able to start coding!**
+
+## Where to go next?
+Kindly redirect yourself to the next ReadMe file at src/config/ReadMeConfig/firebase.md

@@ -41,9 +41,9 @@ Throughout this lecture the main scope to teach will to teach you how to create 
 	* |- context
 		* |- ReadMeUserAuthContext
 			* |- UserAuthContext.md
-			* |- UserAuthContext.js
+		* |- UserAuthContext.js
 	 * |- security
-		* |- ReadMeProtectedRoute.js
+		* |- ReadMeProtectedRoute
 			* |- ProtectedRoute.md
 		* |- ProtectedRoute.js
 	* |- App.js
