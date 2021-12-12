@@ -22,28 +22,34 @@ Throughout this lecture the main scope to teach will to teach you how to create 
 
 ## File Structure of Repo
 
->  |- mobile-single-sign-on
-> 	 |- node_modules
-> 	|- src
->	 |- components
-> 			 |- ReadMeComponents
-> 				 |- Home.md
-> 				 |- Login.md
-> 				 |- SignUp.md
-> 			 |- Home.js
-> 			 |- Login.js
-> 			 |- Signup.js
-> 		 |- configntext.md
-> 			 |- UserAuthContext.js
-> 		|- security
-> 			 |- ReadMeProtectedRoute.js
-> 				 |- ProtectedRoute.md
-> 			 |- ProtectedRoute.js
->		 |- App.js
->		 |- App.css
->		 |- index.js
->		 |- .env.local
-
+ * |- mobile-single-sign-on
+	* |- node_modules
+	* |- src
+	* |- components
+		* |- ReadMeComponents
+			* |- Home.md
+			* |- Login.md
+			* |- SignUp.md
+		* |- Home.js
+		* |- Login.js
+		* |- Signup.js
+	* |- config
+		* |- ReadMeConfig
+			* |- createFirebaseApp.md
+				* |- firebase.md
+	 			* |- firebase.js
+	* |- context
+		* |- ReadMeUserAuthContext
+			* |- UserAuthContext.md
+			* |- UserAuthContext.js
+	 * |- security
+		* |- ReadMeProtectedRoute.js
+			* |- ProtectedRoute.md
+		* |- ProtectedRoute.js
+	* |- App.js
+	* |- App.css
+	* |- index.js
+	* |- .env.local
 
 ## Dependencies
 
