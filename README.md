@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Getting Starting with SSO App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Creators
 
-## Available Scripts
+This project was created by Team B for Mobile - Device Programming SSO
 
-In the project directory, you can run:
+Creators:
 
-### `npm start`
+ - **Liam Curmi de Gray** - SSO Lead Coordinator
+ - **Mark Xuereb** - Team B TUG Test Lead Developer
+ - **Nina Musumeci** - Team B Director
+ - **Stefano Schembri** - Team B Grip Strength Test Lead Developer
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Purpose for SSO Lecture
+Throughout this lecture the main scope to teach will to teach you how to create the following:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - **Login Screen**
+ - **Sign Up Screen**
+ - **Authorizing User**
+ - **Redirect User to Homepage Once Logged In**
+ - **Sign in with Google Provider**
 
-### `npm test`
+## File Structure of Repo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> * |- mobile-single-sign-on
+	> 	* |- node_modules
+	> 	* |- src
+	>		* |- components
+	> 			* |- ReadMeComponents
+		> 				* |- Home.md
+		> 				* |- Login.md
+		> 				* |- SignUp.md
+	> 			* |- Home.js
+	> 			* |- Login.js
+	> 			* |- Signup.js
+	> 		* |- config
+	> 			* |- ReadMeConfig
+	> 				* |- createFirebaseApp.md
+	> 				* |- firebase.md
+	> 			* |- firebase.js
+	>		* |- context
+	> 			* |- ReadMeUserAuthContext
+		> 				* |- UserAuthContext.md
+	> 			* |- UserAuthContext.js
+	> 		* |- security
+	> 			* |- ReadMeProtectedRoute.js
+	> 				* |- ProtectedRoute.md
+	> 			* |- ProtectedRoute.js
+	>		* |- App.js
+	>		* |- App.css
+	>		* |- index.js
+	>		* |- .env.local
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To make use for the full functionality of our React App, we will need to install a couple of dependencies. The host installed the dependencies using **npm**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following dependencies needed are the following:
 
-### `npm run eject`
+ - `npm install firebase`
+ - `npm install react-bootstrap`
+- `npm install react-router-dom`
+- `npm install react-google-button`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Repo React Version
+At the time of writing the author's dependencies were set at the following:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    "dependencies": {
+	    "@testing-library/jest-dom": "^5.16.1", 
+	    "@testing-library/react": "^11.2.7",
+	    "@testing-library/user-event": "^12.8.3",
+	    "bootstrap": "^5.1.3",
+	    "firebase": "^9.6.0",
+	    "react": "^17.0.2",
+	    "react-bootstrap": "^2.0.3",
+	    "react-dom": "^17.0.2",
+	    "react-google-button": "^0.7.2",
+	    "react-router-dom": "^6.1.0",
+	    "react-scripts": "4.0`3",
+	    "web-vitals": "^1.1.2"
+    }
+ Kindly take note of these versions as if you work at a later version this repo might not work with updated dependencies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Where to go next?
+Kindly redirect yourself to the next ReadMe file at src/config/ReadMeConfig/createFirebaseApp.md
