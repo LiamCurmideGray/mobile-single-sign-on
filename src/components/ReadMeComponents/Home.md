@@ -17,14 +17,30 @@ These will be the following imports we will make use of
 
 1. Firstly we will need to call our `useUserAuth` to make use of it
 	1.  `const { logOut, user } = useUserAuth();`
-2.  In addition we want to display the users email address on the screen:
+2. We'll also be making use of the `useNavigate` so we can redirect the user back to the login screen
+	1. `const  navigate = useNavigate();` 
+3.  In addition we want to display the users email address on the screen:
 	1. `{user.email}` 
-3. We would like to also create a button which would **Log the User Out**
+4. We would like to also create a button which would **Log the User Out** insert the `onClick={handleLogout}` with the Button property.
 
-    import { useNavigate } from  "react-router";
-        import { useUserAuth } from  "../context/UserAuthContext";
+       <Button  variant="primary"  onClick={handleLogout}>
+	       Log out
+       </Button>
 
-`<Button  variant="primary"  onClick={handleLogout}>Log out</Button>`
+5. Upon clicking this button we will create a small function to handle the **handleLogout**:
+
+Use:
+
+    const  handleLogout = async () => {
+        try {
+	        await  logOut();
+	        navigate("/");
+	      } catch (error) {
+	        console.log(error.message);
+	      }
+        };
+
+5. The function above calls the function to attempt to log the user out from the current state, if successful, redirect the user back to the login page or else  displays and issue
 
 ## Where to go next?
 
