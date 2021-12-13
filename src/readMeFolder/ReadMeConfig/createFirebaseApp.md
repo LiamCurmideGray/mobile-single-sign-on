@@ -48,12 +48,12 @@ Before starting anything we would need to initialize your Firebase first here ar
 
 15. For **Email/Password** this allows us to create unregistered accounts within our application
 
-![EnableEmail_and_Password](dd)
+![EnableEmail_and_Password](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/EnableEmail_and_Password.PNG)
 
 
 16. For **Google** we will be calling the Google API login to authenticate ourselves with a real gmail account
 
-![EnableGoogleProvider](dd)
+![EnableGoogleProvider](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/EnableGoogleProvider.PNG)
 
 20. **Once that is set, we're able to start coding!**
 
