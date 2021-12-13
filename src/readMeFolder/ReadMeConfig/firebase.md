@@ -74,4 +74,4 @@ This allows us to export the variable `auth` to other classes.
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/readMeFolder/app.md
+Kindly redirect yourself to the next ReadMe file at [app.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/app.md)
