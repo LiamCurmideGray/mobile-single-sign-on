@@ -20,7 +20,7 @@ These will be the following imports we will make use of:
 	 1. `console.log("Check user in Private: ", user);`
  3. We will be creating an if statement to check if the user is null or not
  4. If user is not null, they'll be able to proceed to the home page, else they will be redirected back to the login screen.
-	 1.   
+ 	1.   
 	`if (!user) {
 	return  <Navigate  to="/"  />;
 	}
