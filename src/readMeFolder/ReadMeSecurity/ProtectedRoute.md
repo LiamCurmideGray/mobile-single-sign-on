@@ -1,6 +1,6 @@
 
 # ProtectedRoute.js
-All code referenced here are to be directly implemented within the `ProtectedRoute.js` unless stated otherwise.
+All code referenced here are to be directly implemented within the `src/security/ProtectedRoute.js` unless stated otherwise.
 
 ## Steps for ProtectedRoute.js
 In this class we want to ensure that only **AUTHENTICATED** users are able to access our home page. We will do so with this thanks to our `UserAuthContext.js` created a little while ago.

@@ -1,6 +1,6 @@
 
 # Home.js
-All code referenced here are to be directly implemented within the `Home.js` unless stated otherwise.
+All code referenced here are to be directly implemented within the `src/components/Home.js` unless stated otherwise.
 
 ## Steps for Home.js
 This is the landing page whenever we are able to login via standard **Login, GoogleLogin or Sign Up** We will do so with this thanks to our `UserAuthContext.js` created a little while ago.
@@ -61,4 +61,4 @@ The function above calls the function to attempt to log the user out from the cu
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/security/ProtectedRoute.md
+Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeSecurity/ProtectedRoute.md

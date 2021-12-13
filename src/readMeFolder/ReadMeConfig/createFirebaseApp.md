@@ -59,4 +59,4 @@ Before starting anything we would need to initialize your Firebase first here ar
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/config/ReadMeConfig/firebase.md
+Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeConfig/firebase.md

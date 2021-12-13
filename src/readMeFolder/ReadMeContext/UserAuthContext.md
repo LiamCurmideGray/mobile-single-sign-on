@@ -1,6 +1,6 @@
 
 # UserAuthContext.js
-All code referenced here are to be directly implemented within the `UserAuthContext.js` unless stated otherwise.
+All code referenced here are to be directly implemented within the `src/context/UserAuthContext.js` unless stated otherwise.
 
 ## Steps for UserAuthContext.js
 The purpose for this class is to house all our backend functions so that both the `Login.js & Signup.js`can import the respective functions needed to make use. To do this we'll be learning about the `{createContext, useContext} from react`. The `createContext` allows the class to be exportable to any class and we will be rendering the function through the use of `useContext`.
@@ -167,4 +167,4 @@ Use:
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/components/ReadMeComponents/Signup.md
+Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeComponents/Signup.md

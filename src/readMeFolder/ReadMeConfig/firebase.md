@@ -1,6 +1,6 @@
 
 # Firebase.js
-All code referenced here are to be directly implemented within the `firebase.js` unless stated otherwise.
+All code referenced here are to be directly implemented within the `src/config/firebase.js` unless stated otherwise.
 
 ## Steps for firebase.js
 
@@ -74,4 +74,4 @@ This allows us to export the variable `auth` to other classes.
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/app.md
+Kindly redirect yourself to the next ReadMe file at src/readMeFolder/app.md
