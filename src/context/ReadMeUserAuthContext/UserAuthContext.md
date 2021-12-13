@@ -76,7 +76,7 @@ Use:
 
 
 4. We want to make use of the `useStates()` consider these as **Session Variables** or in this case States that allows us to update the associated variable to whatever corresponding instance we want to make use of.
-	5. `const [user, setUser] = useState({});`
+	1. `const [user, setUser] = useState({});`
 
 
 ## Backend Methods
