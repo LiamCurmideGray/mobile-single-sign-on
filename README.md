@@ -87,4 +87,4 @@ Throught this tutorial there will be a md file adjacent to the current javascrip
 Some instances within the class will already have some code, just replace the code that matches within the MD file.
 
 ## Where to go next?
-Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeConfig/createFirebaseApp.md
+Kindly redirect yourself to the next ReadMe file at [createFirebaseApp.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeConfig/createFirebaseApp.md)
