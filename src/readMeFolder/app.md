@@ -9,4 +9,5 @@ Our App.js will be the main hub of our application and I want you to keep in min
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeContext/UserAuthContext.md
+Kindly redirect yourself to the next ReadMe file at 
+[UserAuthContext.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeContext/UserAuthContext.md)
