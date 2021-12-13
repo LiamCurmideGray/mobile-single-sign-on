@@ -81,5 +81,10 @@ At the time of writing the author's dependencies were set at the following:
     }
  Kindly take note of these versions as if you work at a later version this repo might not work with updated dependencies.
 
+## Implementing Code
+Throught this tutorial there will be a md file adjacent to the current javascript class. Each MD file will have sections of **Added Code** and here will be listed down as numbered points including what code to add on. Each class will be commented out the appropriate point number to reference back to the MD file the appropriate code that needs to be implemented.
+
+Some instances within the class will already have some code, just replace the code that matches within the MD file.
+
 ## Where to go next?
 Kindly redirect yourself to the next ReadMe file at src/config/ReadMeConfig/createFirebaseApp.md
