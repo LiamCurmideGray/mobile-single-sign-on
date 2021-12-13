@@ -1,4 +1,4 @@
-// From Home.md Section - Add Imports
+// From Home.md Section - Add Imports //Replace Current Imports
 import React from "react";
 import { Button } from "react-bootstrap";
 
@@ -16,12 +16,15 @@ const Home = () => {
         Hello Welcome <br />
         {/*From Home.md Section - Adding Code, do step 3 */}
 
+
       </div>
       <div className="d-grid gap-2">
         {/*From Home.md Section - Adding Code, do step 4 */}
+        {/* //Replace <Button> Section */}
         <Button  variant="primary">
-	       Log out
+	        Log out
        </Button>
+
       </div>
     </>
   );

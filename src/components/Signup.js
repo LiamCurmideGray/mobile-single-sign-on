@@ -1,4 +1,4 @@
-// From Signup.md Section - Add Imports
+// From Signup.md Section - Add Imports //Replace Current Imports
 import React from "react";
 import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
@@ -6,7 +6,9 @@ import { Form, Button } from "react-bootstrap";
 const Signup = () => {
 // From Signup.md Section - Adding Code, do step 1 
 
+
 // From Signup.md Section - Adding Code, do step 2 
+
 
 // From Signup.md Section - Adding Code, do step 3 
 
@@ -19,11 +21,14 @@ const Signup = () => {
       <div className="p-4 box">
         <h2 className="mb-3">Firebase Auth Signup</h2>
         {/*From Signup.md Section - Adding Code, do step 8 */}
+
         
         {/*From Signup.md Section - Adding Code, do step 6 */}
+        {/*Replace <Form> Section */}
         <Form >
 
         {/*From Signup.md Section - Adding Code, do step 4 */}
+        {/*Replace <Form.Group> Section */}
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control type="email" placeholder="Email address" 
 
@@ -31,11 +36,11 @@ const Signup = () => {
           </Form.Group>
 
         {/*From Signup.md Section - Adding Code, do step 5 */}
+        {/*Replace <Form.Group> Section */}
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Control type="password" placeholder="Password"
 
            />
-            
           </Form.Group>
 
           <div className="d-grid gap-2">

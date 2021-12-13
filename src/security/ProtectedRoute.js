@@ -1,4 +1,3 @@
-
 // From ProtectedRoute.md Section - Add Imports
 
 const ProtectedRoute = ({ children }) => {
@@ -6,8 +5,8 @@ const ProtectedRoute = ({ children }) => {
 
 // From ProtectedRoute.md Section - Adding Code, do step 2
 
-// From ProtectedRoute.md Section - Adding Code, do step 4
-  return children;
+// From ProtectedRoute.md Section - Adding Code, do step 3
+  /*Replace this ->*/ return children;
 };
 
 export default ProtectedRoute;
