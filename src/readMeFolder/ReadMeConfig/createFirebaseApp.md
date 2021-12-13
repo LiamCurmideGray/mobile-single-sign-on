@@ -43,19 +43,19 @@ Before starting anything we would need to initialize your Firebase first here ar
 
 14. Within the Sign In Providers we want to select both **Email/Password & Google**
 
+![Sign In Providers](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/SignInProviders.PNG)
+
 
 15. For **Email/Password** this allows us to create unregistered accounts within our application
+
+![EnableEmail_and_Password](dd)
 
 
 16. For **Google** we will be calling the Google API login to authenticate ourselves with a real gmail account
 
+![EnableGoogleProvider](dd)
 
-17.  ![Sign In Providers](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/SignInProviders.PNG)
-
-
-18.  **Once that is set, we're able to start coding!**
-
-  
+20. **Once that is set, we're able to start coding!**
 
 ## Where to go next?
 
