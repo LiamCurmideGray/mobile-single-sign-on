@@ -1,6 +1,5 @@
-import React from "react";
-import { Navigate } from "react-router-dom";
-import { useUserAuth } from "../context/UserAuthContext";
+
+// From ProtectedRoute.md Section - Add Imports
 
 const ProtectedRoute = ({ children }) => {
 // From ProtectedRoute.md Section - Adding Code, do step 1 
