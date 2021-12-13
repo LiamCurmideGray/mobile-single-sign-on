@@ -61,4 +61,5 @@ The function above calls the function to attempt to log the user out from the cu
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeSecurity/ProtectedRoute.md
+Kindly redirect yourself to the next ReadMe file at 
+[ProtectedRoute.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeSecurity/ProtectedRoute.md)
