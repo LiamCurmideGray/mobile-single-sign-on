@@ -53,7 +53,7 @@ Before starting anything we would need to initialize your Firebase first here ar
 
 16. For **Google** we will be calling the Google API login to authenticate ourselves with a real gmail account
 
-![EnableGoogleProvider](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/EnableGoogleProvider.PNG)
+![EnableGoogleProvider](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/EnableGoogleProviderImage.PNG)
 
 20. **Once that is set, we're able to start coding!**
 
