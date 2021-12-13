@@ -1,7 +1,7 @@
-# Login.js
-All code referenced here are to be directly implemented within the `Login.js` unless stated otherwise.
+# Signup.js
+All code referenced here are to be directly implemented within the `Signup.js` unless stated otherwise.
 
-## Steps for Login.js
+## Steps for Signup.js
 We will do so with this thanks to our `UserAuthContext.js` created a little while ago.
 
 ## Imports we'll be using
@@ -10,10 +10,9 @@ These will be the following imports we will make use of
   
     import  React, { useState } from  "react";
     import { Link, useNavigate } from  "react-router-dom";
-    import { Form, Alert } from  "react-bootstrap";
-    import { Button } from  "react-bootstrap";
-    import  GoogleButton  from  "react-google-button";
+    import { Form, Alert, Button } from  "react-bootstrap";
     import { useUserAuth } from  "../context/UserAuthContext";
+
 
 ## Adding Code
 
@@ -26,7 +25,7 @@ Use:
     const [error, setError] = useState("");
     
  2. We will need to call our `useUserAuth` to make use of it
-	1.  `const { logIn, googleSignIn } = useUserAuth();`
+	1.  `const { signUp } = useUserAuth();`
 
 3. We'll also be making use of the `useNavigate` so we can redirect the user back to the login screen
 	1.  `const navigate = useNavigate();`
@@ -69,7 +68,7 @@ Use:
 	    e.preventDefault();
 	    setError("");
 	    try {
-		    await  logIn(email, password);
+		    await  signUp(email, password);
 		    navigate("/home");
 	    } catch (err) {
 		    setError(err.message);
@@ -81,37 +80,7 @@ Upon this function being called, we want to ensure first that the `setError` is 
 8. Well be able to catch the error and display it on screen with this command
 	1.  `{error && <Alert  variant="danger">{error}</Alert>}`
 
-9. We would like to make use of the `GoogleSignIn` to login with a valid gmail account which we can do the following:
-
-Use:
-
-    <div>
-	    <GoogleButton
-		    className="g-btn"
-		    type="dark"
-		    onClick={handleGoogleSignIn}
-	    />
-    </div>
-
-10. Upon clicking this button we will call a small function to handle the `handleGoogleSignIn` let's create it:
-
-Use:
-
-    const  handleGoogleSignIn = async (e) => {
-	    e.preventDefault();
-	    setError("");
-	    try {
-		    await  googleSignIn();
-		    navigate("/home");
-	    } catch (error) {
-		    setError(error.message);
-	    }
-    };
-
-Upon this function being called, we want to ensure first that the `setError` is empty by default to clear it from any error messages. Then attempt a `try- & catch function` where we call the `googleSignIn from UserAuthContext` if successful the app will redirect us to the **Home Page** else it catches an error if anything goes wrong
-
-
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/components/ReadMeComponents/Home.md
+Kindly redirect yourself to the next ReadMe file at src/components/ReadMeComponents/Login.md

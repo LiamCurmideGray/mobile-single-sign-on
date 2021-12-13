@@ -1,41 +1,40 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { Form, Alert, Button } from "react-bootstrap";
-import { useUserAuth } from "../context/UserAuthContext";
+// From Signup.md Section - Add Imports
+import React from "react";
+import { Link } from "react-router-dom";
+import { Form, Button } from "react-bootstrap";
 
 const Signup = () => {
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
-  const [password, setPassword] = useState("");
-  const { signUp } = useUserAuth();
-  let navigate = useNavigate();
+// From Signup.md Section - Adding Code, do step 1 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    try {
-      await signUp(email, password);
-      navigate("/home");
-    } catch (err) {
-      setError(err.message);
-    }
-  };
+// From Signup.md Section - Adding Code, do step 2 
+
+// From Signup.md Section - Adding Code, do step 3 
+
+
+// From Signup.md Section - Adding Code, do step 7 
+  
 
   return (
     <>
       <div className="p-4 box">
         <h2 className="mb-3">Firebase Auth Signup</h2>
-        {error && <Alert variant="danger">{error}</Alert>}
+        {/*From Signup.md Section - Adding Code, do step 8 */}
         
-        <Form onSubmit={handleSubmit}>
+        {/*From Signup.md Section - Adding Code, do step 6 */}
+        <Form >
+
+        {/*From Signup.md Section - Adding Code, do step 4 */}
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control type="email" placeholder="Email address" 
-            onChange={(e) => setEmail(e.target.value)} />
+
+           />
           </Form.Group>
 
+        {/*From Signup.md Section - Adding Code, do step 5 */}
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Control type="password" placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)} />
+
+           />
             
           </Form.Group>
 
