@@ -1,53 +1,37 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut,
-  GoogleAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
-import { auth } from "../config/firebase";
+// From UserAuthContext.md Section - Add Imports
+import { createContext } from "react";
 
+// From UserAuthContext.md Section - Adding Code, do step 1 
 const userAuthContext = createContext();
 
 export function UserAuthContextProvider({ children }) {
-  const [user, setUser] = useState({});
+// From UserAuthContext.md Section - Adding Code, do step 5 
 
-  function logIn(email, password) {
-    return signInWithEmailAndPassword(auth, email, password);
-  }
-  function signUp(email, password) {
-    return createUserWithEmailAndPassword(auth, email, password);
-  }
-  function logOut() {
-    return signOut(auth);
-  }
-  function googleSignIn() {
-    const googleAuthProvider = new GoogleAuthProvider();
-    return signInWithPopup(auth, googleAuthProvider);
-  }
+// From UserAuthContext.md Section - Backend Methods, do step 1 
+  
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
-      console.log("Auth", currentuser);
-      setUser(currentuser);
-    });
+// From UserAuthContext.md Section - Backend Methods, do step 2 
+  
 
-    return () => {
-      unsubscribe();
-    };
-  }, []);
+// From UserAuthContext.md Section - Backend Methods, do step 3 
+  
 
+// From UserAuthContext.md Section - Backend Methods, do step 4 
+  
+
+// From UserAuthContext.md Section - State of Authentication, do step 1 
+ 
+
+// From UserAuthContext.md Section - Adding Code, do step 2
+// From UserAuthContext.md Section - State of Authentication, do step 2 
   return (
     <userAuthContext.Provider
-      value={{ user, logIn, signUp, logOut, googleSignIn }}
+      value = {{}}  
     >
       {children}
     </userAuthContext.Provider>
   );
 }
 
-export function useUserAuth() {
-  return useContext(userAuthContext);
-}
+// From UserAuthContext.md Section - Adding Code, do step 3 
+
