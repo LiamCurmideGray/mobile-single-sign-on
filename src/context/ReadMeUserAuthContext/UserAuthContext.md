@@ -1,3 +1,4 @@
+
 # UserAuthContext.js
 All code referenced here are to be directly implemented within the `UserAuthContext.js` unless stated otherwise.
 
@@ -19,7 +20,11 @@ These will be the following imports we will make use of
 ## Adding Code
 
  1. To allow the `UseAuthContext.js` and let it be exportable we will first need to `createContext()` for it. This is done by the following:
-	 1. `const  userAuthContext = createContext();`
+
+Use:
+
+    const  userAuthContext = createContext();
+
  
  2. Within our main method we will need to provide a return function to expose what methods & variables are allowed to be exposed. Due to initialising our `userAuthContext` we can use one of it features which includes the `.Provider` This is done by the following:
 
@@ -49,7 +54,7 @@ If you look back at `App.js` we had already established it as the following:
 		</Routes>
     </UserAuthContextProvider>
 
-Within  our `<UserAuthContextProvider>` we are allowing the following classes to make use of the methods we will be creating.
+Simplifying this down, within  our `<UserAuthContextProvider>` we are allowing the following classes to make use of the methods we will be creating. 
 
     <UserAuthContextProvider>
 	    <Home />
@@ -59,8 +64,7 @@ Within  our `<UserAuthContextProvider>` we are allowing the following classes to
 
 These classes are in fact our `{children} = Home.js , Login.js, Sign`
 
- 3.  As noticed we have already exported `UserAuthContextProvider` to be allowed and used within the `App.js` however we want to ensure that the remainder classes are able to make use of our methods
-	 1. So we can actually export the `useContext` in another method outside of our main method so that the other classes only need to import one small thing.
+ 3.  As noticed we have already exported `UserAuthContextProvider` to be allowed and used within the `App.js` however we want to ensure that the remainder classes are able to make use of our methods. So we can actually export the `useContext` in another method outside of our main method so that the other classes only need to import one small thing.
 
 Use:
 
@@ -68,15 +72,11 @@ Use:
 	    return useContext(userAuthContext);
     }
 
-
-
-
-
-
-
-
 4. We want to make use of the `useStates()` consider these as **Session Variables** or in this case States that allows us to update the associated variable to whatever corresponding instance we want to make use of.
-	1. `const [user, setUser] = useState({});`
+
+Use:
+
+    const [user, setUser] = useState({});
 
 
 ## Backend Methods
@@ -153,7 +153,7 @@ Anytime the user's state has changed the `useEffect` automatically gets executed
 
 These happen anytime due to `logIn, signUp, logOut, googleSignIn` methods
  
-2. Lastly we need to export all the methods and users we created to allow them to be used by the other classes
+2. Lastly we need to export all the methods and users we created to allow them to be used by the other classes by updating the `value` property
 
 Use:
 
