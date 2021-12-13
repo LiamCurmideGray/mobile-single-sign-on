@@ -94,4 +94,5 @@ Use:
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeComponents/Login.md
+Kindly redirect yourself to the next ReadMe file at 
+[Login.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeComponents/Login.md)
