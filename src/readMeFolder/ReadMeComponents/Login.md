@@ -126,4 +126,5 @@ Upon this function being called, we want to ensure first that the `setError` is 
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeComponents/Home.md
+Kindly redirect yourself to the next ReadMe file at 
+[Home.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeComponents/Home.md)
