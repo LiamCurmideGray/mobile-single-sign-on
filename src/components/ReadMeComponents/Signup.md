@@ -1,3 +1,4 @@
+
 # Signup.js
 All code referenced here are to be directly implemented within the `Signup.js` unless stated otherwise.
 
@@ -25,10 +26,17 @@ Use:
     const [error, setError] = useState("");
     
  2. We will need to call our `useUserAuth` to make use of it
-	1.  `const { signUp } = useUserAuth();`
+
+Use:
+
+    const { signUp } = useUserAuth();
+
 
 3. We'll also be making use of the `useNavigate` so we can redirect the user back to the login screen
-	1.  `const navigate = useNavigate();`
+
+Use:
+
+    const navigate = useNavigate();
 
 4. We want to ensure that when a value for `email` is inserted within the input field we want to save that value via the `onChange & event`  and save it appropriately for `setEmail`
 
@@ -78,7 +86,10 @@ Use:
 Upon this function being called, we want to ensure first that the `setError` is empty by default to clear it from any error messages. Then attempt a `try- & catch function` where we call the `logIn(email,password) from UserAuthContext` if successful the app will redirect us to the **Home Page** else it catches an error if anything goes wrong
 
 8. Well be able to catch the error and display it on screen with this command
-	1.  `{error && <Alert  variant="danger">{error}</Alert>}`
+
+Use:
+
+    {error && <Alert  variant="danger">{error}</Alert>}
 
 
 ## Where to go next?
