@@ -167,4 +167,5 @@ Use:
 
 ## Where to go next?
 
-Kindly redirect yourself to the next ReadMe file at src/readMeFolder/ReadMeComponents/Signup.md
+Kindly redirect yourself to the next ReadMe file at 
+[SignUp.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeComponents/Signup.md)
