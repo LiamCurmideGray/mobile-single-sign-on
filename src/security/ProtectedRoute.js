@@ -3,13 +3,11 @@ import { Navigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 
 const ProtectedRoute = ({ children }) => {
-  const { user } = useUserAuth();
+// From ProtectedRoute.md Section - Adding Code, do step 1 
 
-  console.log("Check user in Private: ", user);
-  
-  if (!user) {
-    return <Navigate to="/" />;
-  }
+// From ProtectedRoute.md Section - Adding Code, do step 2
+
+// From ProtectedRoute.md Section - Adding Code, do step 4
   return children;
 };
 
