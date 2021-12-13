@@ -43,7 +43,7 @@ All code referenced here are to be directly implemented within the firebase.js u
  1. Add the **getAuth** at `line 5`
     1. `import { getAuth } from  "firebase/auth";`
     2. This allows us to retrieve the getAuth function from firebase
- 2.  Next is to export our auth at `line 22`
+ 2. Next is to export our auth at `line 22`
     1. `export  const  auth = getAuth(app);`
     2. This allows us to export the variable `auth` to other classes.
 
