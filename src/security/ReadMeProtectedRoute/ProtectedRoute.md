@@ -1,3 +1,4 @@
+
 # ProtectedRoute.js
 All code referenced here are to be directly implemented within the `ProtectedRoute.js` unless stated otherwise.
 
@@ -15,17 +16,32 @@ These will be the following imports we will make use of:
 ## Adding Code
 
  1. Firstly we will need to call our `useUserAuth` to make use of it
-	 1. `const { user } = useUserAuth();`
+
+Use: 
+
+     const { user } = useUserAuth();
+
+ 
  2.  We'll be also adding a console.log to view if the user is authenticated or not
-	 1. `console.log("Check user in Private: ", user);`
- 3. We will be creating an if statement to check if the user is null or not
- 4. If user is not null, they'll be able to proceed to the home page, else they will be redirected back to the login screen.
- 	1. `if (!user) {
-return  <Navigate  to="/"  />;
-}
-return  children;`
+
+Use: 
+
+    console.log("Check user in Private: ", user);
+    
+
+We will be creating an if statement to check if the user is null or not
+
+ 3. If user is not null, they'll be able to proceed to the home page, else they will be redirected back to the login screen.
+
+ Use: 
+ 
+
+     if (!user) {
+	    return  <Navigate  to="/"  />;
+    }
+    return  children;
 
 ## Where to go next?
 
-**That's it! You've finished the coding lecture CONGRATULATIONS!** 
-🥳🥳🥳
+**That's it! You've finished the coding lecture and completed the SSO Tutorial**
+ **CONGRATULATIONS!** 🥳🥳🥳

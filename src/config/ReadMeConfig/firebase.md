@@ -1,5 +1,6 @@
+
 # Firebase.js
-All code referenced here are to be directly implemented within the firebase.js unless stated otherwise.
+All code referenced here are to be directly implemented within the `firebase.js` unless stated otherwise.
 
 ## Steps for firebase.js
 
@@ -12,19 +13,20 @@ All code referenced here are to be directly implemented within the firebase.js u
  3.  Here's how the config should look like at your screens
 
     const  firebaseConfig = {
-    apiKey:  process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain:  process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId:  process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket:  process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId:  process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId:  process.env.REACT_APP_FIREBASE_APP_ID,
+    apiKey:  "YourApiKey"
+    authDomain: "YourAuthDomain",
+    projectId:  "YourProjectId",
+    storageBucket:  "YourStorageBucket",
+    messagingSenderId:  "YourMessagingSenderId",
+    appId:  "YourAppId",
     };
 
- 4. Do you notice the `process.env.REACT_APP_FIREBASE_API_KEY`?
+ 4. Explain Author's `process.env.REACT_APP_FIREBASE_API_KEY`?
  5. In order to secure that only selected people are making use of this repo we need to safe guard it here's how
-	 1. You should notice a **env.local** file at **src level** kindly rename this as **.env.local** 
-	 2. As we would like this file to be accessed at a global level and not be pushed back at the repo
- 6.  Within this file you should see the following:
+	 1. Create a new file at **src level** and call it **.env.local**
+	 2. You should notice a **env.local** file at **src level** kindly rename this as **.env.local**
+	 3. As we would like this file to be accessed at a global level and not be pushed back at the repo
+ 6.  Within this file you create the following:
 
     REACT_APP_FIREBASE_API_KEY=
     REACT_APP_FIREBASE_AUTH_DOMAIN=
@@ -35,17 +37,40 @@ All code referenced here are to be directly implemented within the firebase.js u
 
 8. After each `=` add accordingly what's found in your Firebase SDK without the inclusion of `" "`.
 
-9.  We are able to start importing from `firebase/auth`
+9. You can replace your `const firebaseConfig {}` with the following
+
+ Use:   
+
+    const  firebaseConfig = {
+    apiKey:  process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain:  process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId:  process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket:  process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId:  process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId:  process.env.REACT_APP_FIREBASE_APP_ID,
+    };
+
+10.  The `process.env.REACT....` allows us to call the variables we set within **.env.local**.
+11.  We are able to start importing from `firebase/auth`
 
 
 ## Adding Code
 
- 1. Add the **getAuth** at `line 5`
-    1. `import { getAuth } from  "firebase/auth";`
-    2. This allows us to retrieve the getAuth function from firebase
- 2. Next is to export our auth at `line 22`
-    1. `export  const  auth = getAuth(app);`
-    2. This allows us to export the variable `auth` to other classes.
+ 1. Add the **getAuth** at 
+
+Use:
+
+      import { getAuth } from  "firebase/auth";
+
+This allows us to retrieve the getAuth function from firebase
+
+ 2. Next is to export our auth at
+
+Use:
+
+    export  const  auth = getAuth(app);
+    
+This allows us to export the variable `auth` to other classes.
 
 ## Where to go next?
 
