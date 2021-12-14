@@ -3,14 +3,14 @@
 
 ## Project Creators
 
-This project was created by Team B for Mobile - Device Programming SSO
+This project was created by Team 2 for Mobile - Device Programming SSO
 
 Creators:
 
  - **Liam Curmi de Gray** - SSO Lead Coordinator
- - **Mark Xuereb** - Team B TUG Test Lead Developer
- - **Nina Musumeci** - Team B Director
- - **Stefano Schembri** - Team B Grip Strength Test Lead Developer
+ - **Mark Xuereb** - Team 2 TUG Test Lead Developer
+ - **Nina Musumeci** - Team 2 Director
+ - **Stefano Schembri** - Team 2 Grip Strength Test Lead Developer
 
 ## Purpose for SSO Lecture
 Throughout this lecture the main scope to teach will to teach you how to create the following:
