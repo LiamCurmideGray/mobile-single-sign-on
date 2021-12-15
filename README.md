@@ -1,15 +1,16 @@
+
 # Getting Starting with SSO App
 
 ## Project Creators
 
-This project was created by Team B for Mobile - Device Programming SSO
+This project was created by Team 2 for Mobile - Device Programming SSO
 
 Creators:
 
  - **Liam Curmi de Gray** - SSO Lead Coordinator
- - **Mark Xuereb** - Team B TUG Test Lead Developer
- - **Nina Musumeci** - Team B Director
- - **Stefano Schembri** - Team B Grip Strength Test Lead Developer
+ - **Mark Xuereb** - Team 2 TUG Test Lead Developer
+ - **Nina Musumeci** - Team 2 Director
+ - **Stefano Schembri** - Team 2 Grip Strength Test Lead Developer
 
 ## Purpose for SSO Lecture
 Throughout this lecture the main scope to teach will to teach you how to create the following:
@@ -53,14 +54,18 @@ Throughout this lecture the main scope to teach will to teach you how to create 
 
 ## Dependencies
 
-To make use for the full functionality of our React App, we will need to install a couple of dependencies. The host installed the dependencies using **npm**
+To make use for the full functionality of our React App, we will need to install a couple of dependencies. The host installed the dependencies using **npm** We are able to download all the dependencies through the following command within our Visual Studio Terminal
 
-The following dependencies needed are the following:
+    npm install
 
- - `npm install firebase`
- - `npm install react-bootstrap`
-- `npm install react-router-dom`
-- `npm install react-google-button`
+The following dependencies that we will make the most use of get installed in this process:
+
+ - `npm firebase`
+ - `npm react-bootstrap`
+- `npm react-router-dom`
+- `npm react-google-button`
+
+Note you may experience a message prompt stating some vulnerabilities, this is normal and can be ignored. For the purpose of this tutorial the app will work fine.
 
 ## Repo React Version
 At the time of writing the author's dependencies were set at the following:
@@ -82,7 +87,7 @@ At the time of writing the author's dependencies were set at the following:
  Kindly take note of these versions as if you work at a later version this repo might not work with updated dependencies.
 
 ## Implementing Code
-Throught this tutorial there will be a md file adjacent to the current javascript class. Each MD file will have sections of **Added Code** and here will be listed down as numbered points including what code to add on. Each class will be commented out the appropriate point number to reference back to the MD file the appropriate code that needs to be implemented.
+Throughout this tutorial there will be a md file adjacent to the current JavaScript class. Each MD file will have sections of **Added Code** and here will be listed down as numbered points including what code to add on. Each class will be commented out the appropriate point number to reference back to the MD file the appropriate code that needs to be implemented.
 
 Some instances within the class will already have some code, just replace the code that matches within the MD file.
 
