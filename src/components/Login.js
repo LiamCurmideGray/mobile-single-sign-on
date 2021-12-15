@@ -21,6 +21,9 @@ const Login = () => {
 // From Login.md Section - Adding Code, do step 10 
   
 
+// From Login.md Section - Adding Code, do step 12 
+
+
   return (
     <>
       <div className="p-4 box">
@@ -71,6 +74,12 @@ const Login = () => {
         
       </div>
       <div className="p-4 box mt-3 text-center">
+        {/* From Login.md Section - Adding Code, do step 11 */}
+      <Button className="mb-3" type="dark">
+            Forgotten Password
+          </Button>
+          <br/>
+
         Don't have an account?<Link to="/signup"> to Sign up </Link>
       </div>
     </>

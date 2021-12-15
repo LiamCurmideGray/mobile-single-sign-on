@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 // From firebase.md Section - Adding Code, do step 1 
 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,

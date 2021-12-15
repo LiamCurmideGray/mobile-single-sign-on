@@ -20,6 +20,9 @@ export function UserAuthContextProvider({ children }) {
 // From UserAuthContext.md Section - Backend Methods, do step 4 
   
 
+// From UserAuthContext.md Section - Backend Methods, do step 5 
+
+
 // From UserAuthContext.md Section - State of Authentication, do step 1 
  
 
