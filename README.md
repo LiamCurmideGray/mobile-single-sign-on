@@ -94,7 +94,7 @@ Some instances within the class will already have some code, just replace the co
 
 ## Creation of all Readme files
 
-All readme files were created thanks to [Stack Edit](stackedit.io) and online easy tool to create beautiful Readme files with ease.
+All readme files were created thanks to [Stack Edit](https://stackedit.io) and online easy tool to create beautiful Readme files with ease.
 
 ## Where to go next?
 Kindly redirect yourself to the next ReadMe file at [createFirebaseApp.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeConfig/createFirebaseApp.md)
