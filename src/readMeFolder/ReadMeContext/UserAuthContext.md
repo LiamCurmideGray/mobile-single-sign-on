@@ -1,4 +1,5 @@
 
+
 # UserAuthContext.js
 All code referenced here are to be directly implemented within the `src/context/UserAuthContext.js` unless stated otherwise.
 
@@ -13,7 +14,7 @@ These will be the following imports we will make use of
   
 
     import { createContext, useContext, useEffect, useState } from  "react";
-    import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup,} from  "firebase/auth";
+    import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup, sendPasswordResetEmail} from  "firebase/auth";
     import { auth } from  "../config/firebase";
 
 
@@ -114,7 +115,7 @@ Use:
 
 This allows us to log out the current user with the use of `signOut()` provided by firebase.
 
-4. Lastly we want to also sign if via Google with out `googleSignIn` method
+4. We want to also sign if via Google with out `googleSignIn` method
 
 Use:
 
@@ -125,6 +126,15 @@ Use:
 
 This method allows us to make use of `googleAuthProvider` which we are retrieving from our `firebase/auth` we also would like to add a pop up screen to call the Google SignUp pop up using `signInWithPopup()`
 
+5. Lastly we want to add the feature for `forgetPassword` with this method
+
+Use:
+
+    function  forgetPassword(email) {
+	    return  sendPasswordResetEmail(auth, email);
+    }
+
+This method allows us to send a **valid email** for the user to change their password through firebase itself.
 
 ## State of Authentication
 
@@ -159,7 +169,7 @@ Use:
 
     return (
 	    <userAuthContext.Provider
-		    value={{ user, logIn, signUp, logOut, googleSignIn }}
+		    value={{ user, logIn, signUp, logOut, googleSignIn, forgetPassword }}
 	    >
 		    {children}
     </userAuthContext.Provider>
