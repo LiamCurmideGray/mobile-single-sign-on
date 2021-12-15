@@ -1,4 +1,5 @@
 
+
 # Login.js
 All code referenced here are to be directly implemented within the `src/components/Login.js` unless stated otherwise.
 
@@ -30,7 +31,7 @@ Use:
 
 Use:
 
-    const { logIn, googleSignIn } = useUserAuth();
+    const { logIn, googleSignIn, forgetPassword } = useUserAuth();
 
 
 3. We'll also be making use of the `useNavigate` so we can redirect the user back to the login screen
@@ -122,7 +123,54 @@ Use:
 
 Upon this function being called, we want to ensure first that the `setError` is empty by default to clear it from any error messages. Then attempt a `try- & catch function` where we call the `googleSignIn from UserAuthContext` if successful the app will redirect us to the **Home Page** else it catches an error if anything goes wrong
 
+11. Lastly we want to call the function `handleForgetPassword` in case the user has forgotten their password.
 
+Use:
+
+    <Button  className="mb-3"  type="dark"  onClick={handleForgetPassword}>
+		    Forgotten Password
+	    </Button>
+    <br/>
+
+12. Upon clicking this button we will call a small function to handle the `handleForgetPassword` let's create it:
+
+Use:
+
+    const  handleForgetPassword = async (e) => {
+	    e.preventDefault();
+	    setError("");
+	    try {
+		    let  forgottenEmail = prompt("Enter the email address:");
+	    
+		    if (checkIfEmail(forgottenEmail)) {
+			    await  forgetPassword(forgottenEmail);
+			    alert("A Change Password has been sent to: "+ forgottenEmail + "\nKindly check your inbox.");
+			    navigate("/");
+		    } else {
+			    alert("Input was not of type: email")
+		    }
+	    } catch (error) {
+		    setError(error.message);
+	    }
+    };
+    
+      
+    function  checkIfEmail(text) {
+	    const  regexExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/gi;
+	    return  regexExp.test(text);
+    }
+
+Breaking this section down, upon calling the `handleForgetPassword` we are firstly initializing the `setError` to be empty  then encapsulating the method within a `try and catch`. Using javascript we are creating a prompt for the user to enter their email address which they have forgotten their respective password. Then we are calling another method called `checkIfEmail()`.
+
+The purpose for this method is to validate that the string inserted is actually of type `email` utilising the `regex` code that allows us to verify this. This method returns a boolean result back into our `handleForgetPassword` method.
+
+If the email string inserted is of type `email` we first make an `if statement` when false we will output an `alert` signifying the user that the string is **NOT** of type `email` if true we are able to pass this variable back to `userAuthContext` using the method `forgetPassword` we had already established.
+
+At this point this method can still fail that the `email` is fake and has no where to reach an email provider which is where our `setError` comes into play providing the user an exception has happened. If the email address is **valid** and **real** the app will issue another `alert` notifying the user to check their email address to change their password. This is all done automatically through the `firebase/auth` as shown here:
+
+![Email Notification](d)
+
+![Change Password Screen](dd)
 
 ## Where to go next?
 
