@@ -20,6 +20,7 @@ Throughout this lecture the main scope to teach will to teach you how to create 
  - **Authorizing User**
  - **Redirect User to Homepage Once Logged In**
  - **Sign in with Google Provider**
+ - **Forget Password**
 
 ## File Structure of Repo
 
@@ -90,6 +91,10 @@ At the time of writing the author's dependencies were set at the following:
 Throughout this tutorial there will be a md file adjacent to the current JavaScript class. Each MD file will have sections of **Added Code** and here will be listed down as numbered points including what code to add on. Each class will be commented out the appropriate point number to reference back to the MD file the appropriate code that needs to be implemented.
 
 Some instances within the class will already have some code, just replace the code that matches within the MD file.
+
+## Creation of all Readme files
+
+All readme files were created thanks to [Stack Edit](stackedit.io) and online easy tool to create beautiful Readme files with ease.
 
 ## Where to go next?
 Kindly redirect yourself to the next ReadMe file at [createFirebaseApp.md](https://github.com/LiamCurmideGray/mobile-single-sign-on/blob/main/src/readMeFolder/ReadMeConfig/createFirebaseApp.md)
