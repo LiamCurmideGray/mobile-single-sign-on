@@ -33,7 +33,7 @@ All code referenced here are to be directly implemented within the `src/config/f
     REACT_APP_FIREBASE_PROJECT_ID=
     REACT_APP_FIREBASE_STORAGE_BUCKET=
     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
-    REACT_APP_FIREBASE_APP_ID=`
+    REACT_APP_FIREBASE_APP_ID=
 
 8. After each `=` add accordingly what's found in your Firebase SDK without the inclusion of `" "`.
 
