@@ -28,6 +28,7 @@ Use:
 
  
  2. Within our main method we will need to provide a return function to expose what methods & variables are allowed to be exposed. Due to initialising our `userAuthContext` we can use one of it features which includes the `.Provider` This is provided already:
+
 :
 
     return (
