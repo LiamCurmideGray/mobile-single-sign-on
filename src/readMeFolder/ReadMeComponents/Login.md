@@ -168,9 +168,9 @@ If the email string inserted is of type `email` we first make an `if statement` 
 
 At this point this method can still fail that the `email` is fake and has no where to reach an email provider which is where our `setError` comes into play providing the user an exception has happened. If the email address is **valid** and **real** the app will issue another `alert` notifying the user to check their email address to change their password. This is all done automatically through the `firebase/auth` as shown here:
 
-![Email Notification](d)
+![Email Notification](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/ForgetPasswordEmailNotification.PNG)
 
-![Change Password Screen](dd)
+![Change Password Screen](https://raw.githubusercontent.com/LiamCurmideGray/mobile-single-sign-on/main/firebase-pictures-tutorial/ChangePasswordScreen.PNG)
 
 ## Where to go next?
 
